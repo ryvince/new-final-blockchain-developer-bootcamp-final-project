@@ -42,6 +42,8 @@ Open a second terminal and then start local ganache network:
 'ganache-cli -p 7545'
 
 Back in the oringinal terminal (within the proj directory)
+'yarn install'
+
 'npm install'
 
 Not required, but if npm critical errors / issues running npm, the following command can force update depricated versions that may exist:
