@@ -107,7 +107,8 @@
     },
     {
       "stateMutability": "payable",
-      "type": "fallback"
+      "type": "fallback",
+      "payable": true
     },
     {
       "inputs": [],
@@ -120,7 +121,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -133,7 +135,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -157,7 +160,8 @@
     },
     {
       "stateMutability": "payable",
-      "type": "receive"
+      "type": "receive",
+      "payable": true
     },
     {
       "inputs": [
@@ -185,7 +189,8 @@
       "name": "relistProperty",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -208,7 +213,8 @@
       "name": "listPropertyOnEstateMarket",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -226,7 +232,8 @@
       "name": "sellPropertytoBuyer",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -271,7 +278,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -316,7 +324,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -361,7 +370,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -385,7 +395,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -436,7 +447,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -487,7 +499,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"seller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"sold\",\"type\":\"bool\"}],\"name\":\"PropertyListed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"seller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"deed\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"sold\",\"type\":\"bool\"}],\"name\":\"Purchase\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[],\"name\":\"directestatePropertyNft\",\"outputs\":[{\"internalType\":\"contract ContractEstate\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"}],\"name\":\"findPropertyByDeed\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"sold\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"buyer\",\"type\":\"address\"}],\"internalType\":\"struct SmartProperty.Property\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"}],\"name\":\"findPropertyById\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"sold\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"buyer\",\"type\":\"address\"}],\"internalType\":\"struct SmartProperty.Property\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllProperties\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"sold\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"buyer\",\"type\":\"address\"}],\"internalType\":\"struct SmartProperty.Property[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAvailableProperties\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"sold\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"buyer\",\"type\":\"address\"}],\"internalType\":\"struct SmartProperty.Property[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getPropertiesOwnedByCustomer\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"sold\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"buyer\",\"type\":\"address\"}],\"internalType\":\"struct SmartProperty.Property[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"ownerAddress\",\"type\":\"address\"}],\"name\":\"listPropertyOnEstateMarket\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"listingId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deedNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"propertyValue\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"ownerAddress\",\"type\":\"address\"}],\"name\":\"relistProperty\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"ownerAddress\",\"type\":\"address\"}],\"name\":\"sellPropertytoBuyer\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"propertyListingId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"userAddress\",\"type\":\"address\"}],\"name\":\"verifyPropertyOwnership\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"author\":\"Ryan Vincent\",\"details\":\"This contract is used to list new properties on a Real Estate NFT Market_propertyListingId is an auto incremental id to identify the position on the market placeCounters library is being used to track property deeds for properties listed and number of properties Sold.\",\"kind\":\"dev\",\"methods\":{\"findPropertyByDeed(uint256)\":{\"params\":{\"deedNumber\":\"property deed\"},\"returns\":{\"_0\":\"Property Details\"}},\"findPropertyById(uint256)\":{\"params\":{\"propertyListingId\":\"ID of the property to be fetched\"},\"returns\":{\"_0\":\"Property Details\"}},\"getAllProperties()\":{\"returns\":{\"_0\":\"Property[] All the marketplace properties\"}},\"getAvailableProperties()\":{\"returns\":{\"_0\":\"Property[] All the unsold marketplace properties\"}},\"getPropertiesOwnedByCustomer()\":{\"returns\":{\"_0\":\"Property[] All the properties owned by the customer\"}},\"listPropertyOnEstateMarket(uint256,uint256,address)\":{\"details\":\"transfers the property from seller(buyer) to the Smart Property Contractfirst checks if the property is not listed already by checking the deedNumber\",\"params\":{\"deedNumber\":\"Token ID of the Property\",\"propertyValue\":\"Price of the Property specified by the seller\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"relistProperty(uint256,uint256,uint256,address)\":{\"details\":\"sells an existing property st price greater than zerofirst the property is not already listed as for sale\",\"params\":{\"deedNumber\":\"Token ID of the Property\",\"listingId\":\"Current property listing id \",\"propertyValue\":\"Price of the Property specified by the seller\"}},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"sellPropertytoBuyer(uint256,address)\":{\"params\":{\"propertyListingId\":\"Listing ID of the property on the real estate market place\"}},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"verifyPropertyOwnership(uint256,address)\":{\"params\":{\"propertyListingId\":\"is the property ID on the market\",\"userAddress\":\"is the current owner of the property\"},\"returns\":{\"_0\":\"bool if the userAddress is the owner of the properties\"}}},\"title\":\"Title Transfer SmartProperty\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"findPropertyByDeed(uint256)\":{\"notice\":\"Finds a property by listing deed number\"},\"findPropertyById(uint256)\":{\"notice\":\"Finds a property by listing ID\"},\"getAllProperties()\":{\"notice\":\"Finds all properties.\"},\"getAvailableProperties()\":{\"notice\":\"Finds all available properties. i.e properties still available for buying.\"},\"getPropertiesOwnedByCustomer()\":{\"notice\":\"Returns the details of the properties owned by the customer\"},\"listPropertyOnEstateMarket(uint256,uint256,address)\":{\"notice\":\"lists a seller's property on the real estate market\"},\"verifyPropertyOwnership(uint256,address)\":{\"notice\":\"check if the customer is the true owner of a property\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SmartProperty.sol\":\"SmartProperty\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x24e0364e503a9bbde94c715d26573a76f14cd2a202d45f96f52134ab806b67b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e12cbaa7378fd9b62280e4e1d164bedcb4399ce238f5f98fc0eefb7e50577981\",\"dweb:/ipfs/QmXRoFGUgfsaRkoPT5bxNMtSayKTQ8GZATLPXf69HcRA51\"]},\"@openzeppelin/contracts/security/ReentrancyGuard.sol\":{\"keccak256\":\"0x0e9621f60b2faabe65549f7ed0f24e8853a45c1b7990d47e8160e523683f3935\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://287a2f8d5814dd0f05f22b740f18ca8321acc21c9bd03a6cb2203ea626e2f3f2\",\"dweb:/ipfs/QmZRQv9iuwU817VuqkA2WweiaibKii69x9QxYBBEfbNEud\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x81c02855bc239e16ec09eee000a8bec691424c715188d6d881037e69c45414c4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://46e3ecc8920aeb78c362a387520fe28e022cdc6d04256d9e5874eb8ff6868b6d\",\"dweb:/ipfs/QmdfCTHrV6CZMGiM3KqGF8tWkdNvGpEmWFyy72X1LAHsz2\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x516a22876c1fab47f49b1bc22b4614491cd05338af8bd2e7b382da090a079990\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a439187f7126d31add4557f82d8aed6be0162007cd7182c48fd934dbab8f3849\",\"dweb:/ipfs/QmRPLguRFvrRJS7r6F1bcLvsx6q1VrgjEpZafyeL8D7xZh\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xd5fa74b4fb323776fa4a8158800fec9d5ac0fec0d6dd046dd93798632ada265f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://33017a30a99cc5411a9e376622c31fc4a55cfc6a335e2f57f00cbf24a817ff3f\",\"dweb:/ipfs/QmWNQtWTPhA7Lo8nbxbc8KFMvZwbFYB8fSeEQ3vuapSV4a\"]},\"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol\":{\"keccak256\":\"0x1cbe42915bc66227970fe99bc0f783eb1de30f2b48f984af01ad45edb9658698\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2baa08eb67d9da46e6c4c049f17b7684a1c68c5268d0f466cfa0eb23ce2bf9b0\",\"dweb:/ipfs/Qmdnj8zj4PfErB2HM2eKmDt7FrqrhggsZ6Qd8MpD593tgj\"]},\"@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0x75b829ff2f26c14355d1cba20e16fe7b29ca58eb5fef665ede48bc0f9c6c74b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a0a107160525724f9e1bbbab031defc2f298296dd9e331f16a6f7130cec32146\",\"dweb:/ipfs/QmemujxSd7gX8A9M8UwmNbz4Ms3U9FG9QfudUgxwvTmPWf\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x51b758a8815ecc9596c66c37d56b1d33883a444631a3f916b9fe65cb863ef7c4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://997ca03557985b3c6f9143a18b6c3a710b3bc1c7f189ee956d305a966ecfb922\",\"dweb:/ipfs/QmQaD3Wb62F88SHqmpLttvF6wKuPDQep2LLUcKPekeRzvz\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"@openzeppelin/contracts/utils/Counters.sol\":{\"keccak256\":\"0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee\",\"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x32c202bd28995dd20c4347b7c6467a6d3241c74c8ad3edcbb610cd9205916c45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8179c356adb19e70d6b31a1eedc8c5c7f0c00e669e2540f4099e3844c6074d30\",\"dweb:/ipfs/QmWFbivarEobbqhS1go64ootVuHfVohBseerYy9FTEd1W2\"]},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fb0048dee081f6fffa5f74afc3fb328483c2a30504e94a0ddd2a5114d731ec4d\",\"dweb:/ipfs/QmZptt1nmYoA5SgjwnSgWqgUSDgm4q52Yos3xhnMv3MV43\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/ContractEstate.sol\":{\"keccak256\":\"0x93e8dcc225c9ef44790d08224994931df4885f7135061212a82fb6be5e588641\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://87789a51f7d1da91b367f8952081dba4077ae8ac0b5bdc2533822bf103f0ed37\",\"dweb:/ipfs/QmNjSaaUPqxvZBNC11fFjVp7krMj5eNSm2dFn36VcPTW8r\"]},\"project:/contracts/SmartProperty.sol\":{\"keccak256\":\"0x6e45ef11f5a10aa676e34cbda7cbedc7ea9a47300509fa56def36c800595c0d1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://80972b8bce52a18c8994803f906e5c716090a5103de154c644fb55e9f99ab0ae\",\"dweb:/ipfs/QmT7BwuBQGLNcPBTTRiwjVmk25mMVby83Udqm1Vsqme7hz\"]}},\"version\":1}",
@@ -32621,9 +32634,17 @@
     "name": "solc",
     "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0xaB9664335237597DD0FD16938E594F6484FD7998",
+      "transactionHash": "0x5ce3881d77d160b2828184ec8c4e3e89b9c9344d0b2c84852d62c67b7fa983ea"
+    }
+  },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-12T21:09:03.728Z",
+  "updatedAt": "2022-01-12T21:42:16.353Z",
+  "networkType": "ethereum",
   "devdoc": {
     "author": "Ryan Vincent",
     "details": "This contract is used to list new properties on a Real Estate NFT Market_propertyListingId is an auto incremental id to identify the position on the market placeCounters library is being used to track property deeds for properties listed and number of properties Sold.",

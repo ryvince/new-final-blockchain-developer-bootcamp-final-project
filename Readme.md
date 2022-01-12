@@ -60,8 +60,7 @@ Reset truffle:
 'truffle migrate --reset'
 ```
 ### 2. React Local Spin
-If you haven't installed or encounter issues, make sure react is installed with:
-npm i react-scripts
+
 
 ```
 npm start
@@ -70,9 +69,17 @@ note: if file presents react-scripts package dependency, use the provided .env.e
 In the example provided will be included this setting as well as example of the API keys, other requirements (without private keys)
 SKIP_PREFLIGHT_CHECK=true
 
-
-
 opens in browser link: https://localhost:3000
+
+If you haven't installed or encounter issues, make sure react is installed with:
+npm i react-scripts
+
+Before migrating new contract via Infura; update .env file with Infura UR and Mnemonic
+
+Also
+npm install @truffle/hdwallet-provider
+
+Then run truffle migrate --network rinkeby
 
 Note on npm start: if receiving error notifications related to npm start, i.e. compiler versions, you may need to create a local ..env file and include the suggested statement SKIP_PREFLIGHT_CHECK=true  
 Refer to .envExample for details on the .env requirements
