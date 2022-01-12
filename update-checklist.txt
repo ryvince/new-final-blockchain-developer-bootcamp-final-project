@@ -1,0 +1,37 @@
+txt
+
+Redeploy contract to ne address
+Deploy new ERC721 / Create new listings for sale
+Link to new infura/IFPS
+
+.env - not listed below- needs private keys / server URL, etc.
+
+File structure - simplify below for readme
+
+blockchain-developer-bootcamp-final-project
+├
+├── truffle-config.js -first pass done
+├── package.json
+├── README.md -Review last
+└──  contracts
+	├── ContractEstate.sol -first pass done
+	├── Migrations.sol -first pass done
+	└── SmartProperty.sol -first pass done
+└── migrations
+	├── 1_initial_migration.js  -first pass done
+	└── 2_deploy_contracts.js -first pass done
+├── public
+└── src
+	├── abis - no changes required
+	├── Components -first pass done
+	├── Pages
+	└── utils
+		├── ipfs.js
+		└── mint.js
+	├── App.js - First Pass at front end updates
+	├── index.js - First Pass at front end updates
+	├── ReportWebVitals.js - First Pass at front end updates
+	└── .css files - First Pass at front end updates
+└── test
+	├── 1_contractEstate-test.js
+	└── 2_smartProperty-test.js
