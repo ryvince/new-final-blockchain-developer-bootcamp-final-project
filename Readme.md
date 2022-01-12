@@ -60,6 +60,9 @@ Reset truffle:
 'truffle migrate --reset'
 ```
 ### 2. React Local Spin
+If you haven't installed or encounter issues, make sure react is installed with:
+npm i react-scripts
+
 ```
 npm start
 
