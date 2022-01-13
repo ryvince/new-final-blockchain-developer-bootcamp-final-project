@@ -1,17 +1,11 @@
-txt
+checklist on items to update for final launch 
 
-Redeploy contract to ne address
-Deploy new ERC721 / Create new listings for sale
-Link to new infura/IFPS
-
-.env - not listed below- needs private keys / server URL, etc.
-
-File structure - simplify below for readme
+File structure
 
 blockchain-developer-bootcamp-final-project
 ├
 ├── truffle-config.js -first pass done
-├── package.json
+├── package.json - ok
 ├── README.md -Review last
 └──  contracts
 	├── ContractEstate.sol -first pass done
