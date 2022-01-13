@@ -23,7 +23,7 @@ contract('SmartProperty', function(accounts) {
 		});
 	})
 
-	// Test for listing of a Property onto Marketplace
+	// Test to list a Property onto Marketplace
 	it('Should be able to list a property for sale on the SmartProperty Market', async () => {
 		await SmartPropertyMarket.deployed().then(async function(smartPropertyMarket) {
 			await ContractEstate.deployed(smartPropertyMarket.address).then(async function(estatePropertyNft){
@@ -56,7 +56,7 @@ contract('SmartProperty', function(accounts) {
 			});
 		})
 
-	// Test for creation and sale of an Estate Property
+	// Test for creation and sale of a Property
 	it('Should be able to buy Estate Property and transfer it to buyer',  async () => {
 		await SmartPropertyMarket.deployed().then(async function(smartPropertyMarket) {
 			await ContractEstate.deployed(smartPropertyMarket.address).then(async function(estatePropertyNft){

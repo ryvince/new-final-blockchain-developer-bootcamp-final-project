@@ -9,7 +9,7 @@ contract('ContractEstate', function(accounts) {
 	let tokenId
 
 	// Tests contract addresses
-	it('should check if Addresses are correct - all contracts must have defined address',  () => {
+	it('should check if Addresses are defined - all contracts must have defined address',  () => {
 		SmartPropertyMarket.deployed().then( function(smartPropertyMarket) {
 			ContractEstate.deployed(smartPropertyMarket.address).then(function(estatePropertyNft){
 
@@ -24,7 +24,7 @@ contract('ContractEstate', function(accounts) {
 		});
 	})
 
-	// Tests name for the token of ContractEstate contract
+	// Tests name for the token of the contract
 	it('Should have a name', async () => {
 		await SmartPropertyMarket.deployed().then( async function(smartPropertyMarket) {
 			await ContractEstate.deployed(smartPropertyMarket.address).then( async function(estatePropertyNft){
