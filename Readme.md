@@ -19,8 +19,9 @@ This project aims to explore the use of NFTs in selling real estate, as well as 
 ## PUBLIC URL - FRONTEND
 
 -Needs updated links:
-- [https://boring-bose-c1ae6a.netlify.app/](https://boring-bose-c1ae6a.netlify.app/)
-- Alternative Site - [https://contract-estate.herokuapp.com/](https://contract-estate.herokuapp.com/)
+- Netlify: https://musing-ramanujan-e04896.netlify.app/
+- 
+- Alternative Site - heroku?
 ```
 NB: If is fails to load the first time and displays a heroku erro, refresh the page.
 ```
@@ -148,6 +149,8 @@ then enlisted to the market place and appears as for sale
 - 5. Approve transaction on metamask to list property on the market.
 
 - 6. Navigate to the property Marketplace to view the newly listed property
+
+NOTES: Within Metamask, you may see an option related to gas fees on Rinkeby, where the transaction is 'expected to fail' but the user has the option to select 'I will try anyway'. This will allow the transaction to process.
 ```
 
 ### BUYING A PROPERTY
