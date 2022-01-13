@@ -1,7 +1,6 @@
- blockchain-developer-bootcamp-final-project
+# blockchain-developer-bootcamp-final-project
 
-# update version 3.0 rebuild local sync
-
+## https://github.com/ryvince/new-final-blockchain-developer-bootcamp-final-project
 
 ## ETHEREUM ADDRESS FOR CERTIFICATE 
 
@@ -12,10 +11,9 @@
 ## INTRODUCTION AND CONCEPT
 
 ```
-This project aims to explore the use of NFTs in real estate, as well as personal property (cars, boats, RVs, etc.). This Dapp will allows 
-the purchase of real world/physical property, given an NFT that represents the property. The NFT will be the deed to the land or property that belongs to the buyer and can be proved. 
+This project aims to explore the use of NFTs in selling real estate, as well as personal property (cars, boats, RVs, etc.). This Dapp will allow the purchase of real world/physical property, given an NFT that represents the property. The NFT will be the deed to the land or property that belongs to the buyer and can be proved. 
 
-🚀 The project can be further extended, to include other title-related assets like cars, boats, etc. Additionally, it would be nice to add the option to 'bid' or offer a price below ask, so that the buyer can potentially negotiate a deal through the app.
+🚀 The project can be further extended, to include the ability to remove a listing, for the owner/lister of the property Additionally, it would be nice to add the option to 'bid' or offer a price below ask, so that the buyer can potentially negotiate a deal through the app.
 
 ```
 ## PUBLIC URL - FRONTEND
@@ -31,7 +29,7 @@ NB: If is fails to load the first time and displays a heroku erro, refresh the p
 
 -insert Youtube link
 
-## GETTING STARTED LOCALY
+## GETTING STARTED LOCALY and Dependencies
 
 ### 1. Local Solidity Spin
 ```
@@ -106,8 +104,6 @@ blockchain-developer-bootcamp-final-project
 	├── Components
 	├── Pages
 	└── utils
-		├── ipfs.js
-		└── mint.js
 	├── App.js
 	├── index.js
 	├── ReportWebVitals.js
@@ -121,7 +117,7 @@ contracts_directory: "./contracts/",
   contracts_build_directory: "./src/abis/",
   migrations_directory: "./migrations/",
   test_directory: "./test/",
-  compilers: {
+
 
 ```
 
@@ -145,7 +141,7 @@ if connected, the app displays the wallet address the user has connected.
 
 NOTES: On submit, the dapp uploads data to ipfs via (ips.infura.io) and returns the CID and 
 tokenURI. The NFT is then minted immediately to the seller's address. After it is minted it is 
-then enlisted to the market place and appears as sold
+then enlisted to the market place and appears as for sale
 
 - 4. Approve transaction on metamask to mint
 
@@ -161,21 +157,6 @@ then enlisted to the market place and appears as sold
 - 2. Buy option requests for permision to pay x ETH to the property owner
 
 - 3. On successful payment, property is transfered to the buyer and delisted from the market place. 
-```
-
-## DEPENDENCIES AND COMMANDS - INSTRUCTIONS - Potentially remove or delete this section seems duplicative
-
-```
-npm install  (installing all dependencies)
-
-truffle test --network ganache_gui (running on port 7545)
-truffle test --network ganache_cli (running on port 8545)
-
-truffle compile
-
-truffle migrate --reset 
-
-npm start (running react frontend locally)
 ```
 
 ## ISSUES
