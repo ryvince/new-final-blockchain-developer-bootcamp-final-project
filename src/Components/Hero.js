@@ -16,10 +16,10 @@ const StyledHero = styled(Hero)`
       <Hero.Body>
         <Container>
           <Heading>
-            Welcome to Title Tansfer - Smart Contracts
+            Welcome to Title Tansfer
           </Heading>
           <Heading subtitle size={4}>
-            Buy and Sell Real Estate using NFT Deeds
+            Your smart contract-enabled property marketplace
           </Heading>
         </Container>
       </Hero.Body>

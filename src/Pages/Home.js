@@ -11,7 +11,7 @@ import Market from '../Components/Market';
   return (
     <Section>
       <Hero />
-      <Heading size={5} renderAs="h1">Properties for Sale</Heading>(newly listed properties may take a moment to display)
+      <Heading size={5} renderAs="h1">Properties for Sale</Heading>(Newly listed properties may take a moment to display, as the blocks chain together)
       <Columns>
         <Market contract={this.props.contract} propertyNft={this.props.propertyNft} ipfsGateway={this.props.ipfsGateway} limit={3} />
       </Columns>

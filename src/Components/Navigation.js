@@ -43,12 +43,12 @@ const StyledLink = styled(Link)`
         <Navbar.Container>
           <Navbar.Item renderAs="span">
             <StyledLink to="/">
-              Property Market Place
+              View Property Marketplace
             </StyledLink>
           </Navbar.Item>
           <Navbar.Item renderAs="span">
             <StyledLink to="/sell">
-              Sell Property
+              Click here to list and sell Property
             </StyledLink>
           </Navbar.Item>
           {/* <Navbar.Item renderAs="span">
