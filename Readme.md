@@ -18,12 +18,8 @@ This project aims to explore the use of NFTs in selling real estate, as well as 
 ```
 ## PUBLIC URL - FRONTEND
 
--Needs updated links:
 - Netlify: https://musing-ramanujan-e04896.netlify.app/
-- 
-- Alternative Site - heroku?
-```
-NB: If is fails to load the first time and displays a heroku erro, refresh the page.
+  
 ```
 
 ## SCREENCAST
@@ -35,7 +31,7 @@ NB: If is fails to load the first time and displays a heroku erro, refresh the p
 ### 1. Local Solidity Spin
 ```
 After cloning directory; change dir to folder used
-cd ../blockchain-developer-bootcamp-final-project
+cd ../new-final-blockchain-developer-bootcamp-final-project
 
 Open a second terminal and then start local ganache network: 
 'ganache-cli -p 7545'
@@ -163,7 +159,7 @@ NOTES: Within Metamask, you may see an option related to gas fees on Rinkeby, wh
 ```
 
 ## ISSUES
-- [Github Issues Page](https://github.com/ryvince/blockchain-developer-bootcamp-final-project/issues)
+- [Github Issues Page] (https://github.com/ryvince/new-final-blockchain-developer-bootcamp-final-project/issues)
 
 ## CONTACT
 - [Email Ryan Vincent](mailto:ryvince.dev@gmail.com)
