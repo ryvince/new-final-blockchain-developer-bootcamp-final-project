@@ -24,7 +24,7 @@ This project aims to explore the use of NFTs in selling real estate, as well as 
 
 ## SCREENCAST
 
--insert Youtube link
+-youtube: https://www.youtube.com/watch?v=JzFOZ4spYCw
 
 ## GETTING STARTED LOCALY and Dependencies
 
